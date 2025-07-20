@@ -49,7 +49,7 @@ export default function Home() {
           placeholder="Height in cm"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
-          className="w-full p-2 mb-4 border border-black-300 rounded"
+          className="w-full p-2 mb-4 border border-black-300 rounded text-black placeholder-black"
         />
         <label className="block text-black font-semibold mb-1">Weight (kg):</label>
         <input
@@ -57,7 +57,7 @@ export default function Home() {
           placeholder="Weight in kg"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
-          className="w-full p-2 mb-4 border border-black-300 rounded"
+          className="w-full p-2 mb-4 border border-black-300 rounded text-black placeholder-black"
         />
         <button
           onClick={calculateBMI}
