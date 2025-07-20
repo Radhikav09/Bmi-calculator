@@ -43,19 +43,21 @@ export default function Home() {
     <main className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold text-green-600 mb-6">BMI Calculator</h1>
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <label className="block text-black font-semibold mb-1">Height (cm):</label>
         <input
           type="number"
           placeholder="Height in cm"
           value={height}
           onChange={(e) => setHeight(e.target.value)}
-          className="w-full p-2 mb-4 border border-gray-300 rounded"
+          className="w-full p-2 mb-4 border border-black-300 rounded"
         />
+        <label className="block text-black font-semibold mb-1">Weight (kg):</label>
         <input
           type="number"
           placeholder="Weight in kg"
           value={weight}
           onChange={(e) => setWeight(e.target.value)}
-          className="w-full p-2 mb-4 border border-gray-300 rounded"
+          className="w-full p-2 mb-4 border border-black-300 rounded"
         />
         <button
           onClick={calculateBMI}
@@ -63,7 +65,7 @@ export default function Home() {
         >
           Calculate BMI
         </button>
-        <div className="mt-4 whitespace-pre-line text-gray-800">{result}</div>
+        <div className="mt-4 whitespace-pre-line text-pink-800">{result}</div>
       </div>
     </main>
   );
