@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
+    <main className="min-h-screen bg-black-100 flex flex-col items-center justify-center p-4">
       <h1 className="text-4xl font-bold text-green-600 mb-6">BMI Calculator</h1>
       <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
         <label className="block text-black font-semibold mb-1">Height (cm):</label>
